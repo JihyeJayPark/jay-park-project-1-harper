@@ -6,37 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="./index.html">Harper</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>             
-        </div>
-    </nav>
-
     <header>
-        <div class="wrapper">
-            <h1>Contact me</h1>            
+        <nav>
+            <div class="wrapper">
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="./index.html">Harper</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div>
+            <img src="./assets/contact-image-1.jpg" alt=""><!-- Maybe background img? -->
+            <h2>Contact me</h2>            
         </div>
     </header>
 
     <section>
         <div class="wrapper contactFlexContainer">
             <aside class="contactLeft">
-                <h3>info@email.com</h3>
+                <h5>info@email.com</h5>
                 <p>123 - 456 - 7890</p>
                 <p>123 Queen Street West, Unit 10</p>
                 <p>Toronto, Ontario</p>
                 <p>M5V2D5</p>
             </aside>
             <div class="contactForm contactRight" id="contactForm">
-                <form action="#" method="#" class="myForm" name="myForm">
+                <form action="#" method="post" class="myForm" name="myForm">
                     <div class="formTop">
                         <input type="text" class="userName" id="userName" name="userName" placeholder="Name">
                         <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">                    
@@ -53,7 +56,7 @@
     </section>
 
     <footer>
-        <p>Copyright 2018 HackerYou</p>
+        <p>Copyright &copy; 2018 HackerYou</p>
     </footer>
 </body>
 </html>
