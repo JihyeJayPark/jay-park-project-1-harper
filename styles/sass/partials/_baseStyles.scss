@@ -1,0 +1,13 @@
+@import "./variables";
+
+.wrapper {
+    width: 80%;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: $tertiary;
+    padding: 5px 30px;
+    // hover&focus needed?
+}

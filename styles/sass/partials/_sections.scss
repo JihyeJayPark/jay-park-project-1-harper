@@ -1,0 +1,16 @@
+.section1 {
+    background-color: #f6f6f6;
+    height: 400px;
+    .about {
+        display: flex;
+        .section1Placeholder {
+            width: 40%;
+        }
+        .section1Content {
+            width: 60%;
+            padding: 0 50px;
+        }        
+    }
+    
+
+}
