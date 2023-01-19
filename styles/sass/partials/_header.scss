@@ -6,35 +6,36 @@ header {
     display: flex;
     .headerImg {
         width: 40%;
-        // position: relative;
-        .shadowBox {
-            width: 440px;
-            height: 650px;
-            background-color: white;
+        position: relative;
+        background-color: white;
+        top: 100px;
+        left: 100px;
+        img {
+            // width: 440px;
+            // height: 650px;
             // position: absolute;
-            img {
-                width: 440px;
-                height: 650px;
-            }
+            // bottom: -125px;
+            // max-width: 45%;
+            // max-height: 600px;
         }
     }
+}
     .headerContent {
         width: 60%;
         padding: 0 50px;
         .contentContainer {
-            position: relative;
-            display: flex;
-            // margin: auto 0;
-            h1 {
-                font-size: 8rem;
-                align-items: center;
-            }
-            img {
-                position: absolute;
-            }       
+            width: 65%;
+            margin: 0 auto;
+            // h1 {
+            //     font-size: 8rem;
+            //     align-items: center;
+            // }
+            // img {
+            //     position: absolute;
+            // }       
         }
 
     }
-}
+
 
 
