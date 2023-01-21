@@ -243,6 +243,8 @@ body p {
   color: #171717;
   line-height: 1.6rem;
   letter-spacing: 0;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 h1, h2, h3, h4, h5, .button, .menu {
@@ -350,7 +352,7 @@ header {
   width: 40%;
   position: relative;
   background-color: white;
-  top: 50px;
+  top: 80px;
 }
 .header .headerImg img {
   position: relative;
@@ -360,7 +362,7 @@ header {
 
 .headerContent {
   width: 60%;
-  padding: 0 50px;
+  padding: 0 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,23 +374,26 @@ header {
   position: relative;
 }
 .headerContent .contentContainer h1 {
-  font-size: 8rem;
+  font-size: 7rem;
 }
 .headerContent .contentContainer img {
+  width: 160px;
+  height: 150px;
   position: absolute;
-  left: 420px;
-  top: -50px;
+  left: 370px;
+  top: -40px;
 }
 
 .section1 {
   background-color: #f6f6f6;
-  height: 500px;
+  height: 470px;
 }
 .section1 .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
+  padding: 120px 0;
 }
 .section1 .about .section1Placeholder {
   width: 40%;
@@ -396,5 +401,5 @@ header {
 .section1 .about .section1Content {
   width: 60%;
   height: 100%;
-  padding: 0 50px;
+  padding-left: 70px;
 }

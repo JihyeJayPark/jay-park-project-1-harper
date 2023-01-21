@@ -2,13 +2,13 @@
 
 .section1 {
     background-color: #f6f6f6;
-    height: 500px;
+    height: 470px;
     .about {
         display: flex;
         // justify-content: center;
         // align-items: center;
         height: 100%;
-        // padding: 50px 0;
+        padding: 120px 0;
         .section1Placeholder {
             width: 40%;
         }
@@ -20,10 +20,8 @@
             height: 100%;
             // display: inline-block;
             // margin: auto 0;
-            padding: 0 50px;
-
+            padding-left: 70px;
         }        
     }
-    
-
 }
+
