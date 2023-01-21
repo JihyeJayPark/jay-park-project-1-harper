@@ -1,22 +1,22 @@
-@import "./variables";
+@use "./variables";
 
 html {
     font-size: 125%;
 }
 
 body p {
-    font-family: $bodyFont;
+    font-family: variables.$bodyFont;
     // font-weight: 400 or regular;
     font-size: 1rem;
-    color: $solidBlack;
+    color: variables.$solidBlack;
     line-height: 1.6rem;
     letter-spacing: 0;
 }
 
 h1, h2, h3, h4, h5, .button, .menu {
-    font-family: $keyFont;
+    font-family: variables.$keyFont;
     // font-weight: 700 or bold;
-    color: $solidBlack;
+    color: variables.$solidBlack;
     letter-spacing: 0.05rem;
     text-transform: uppercase;
     margin: 0;

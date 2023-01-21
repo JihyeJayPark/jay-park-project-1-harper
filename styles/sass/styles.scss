@@ -21,12 +21,12 @@
 // BODY:
 // body: 20px;
 
-@import "./partials/setup";
-@import "./partials/variables";
-@import "./partials/typography";
-@import "./partials/baseStyles";
-@import "./partials/nav";
-@import "./partials/footer";
-@import "./partials/header";
-@import "./partials/sections";
-@import "./partials/mediaQueries";
+@use "./partials/setup";
+@use "./partials/variables";
+@use "./partials/typography";
+@use "./partials/baseStyles";
+@use "./partials/nav";
+@use "./partials/footer";
+@use "./partials/header";
+@use "./partials/sections";
+@use "./partials/mediaQueries";

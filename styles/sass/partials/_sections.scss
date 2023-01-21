@@ -1,14 +1,27 @@
+@use "./variables";
+
 .section1 {
     background-color: #f6f6f6;
-    height: 400px;
+    height: 500px;
     .about {
         display: flex;
+        // justify-content: center;
+        // align-items: center;
+        height: 100%;
+        // padding: 50px 0;
         .section1Placeholder {
             width: 40%;
         }
         .section1Content {
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
             width: 60%;
+            height: 100%;
+            // display: inline-block;
+            // margin: auto 0;
             padding: 0 50px;
+
         }        
     }
     

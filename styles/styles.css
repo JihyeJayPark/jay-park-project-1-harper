@@ -233,8 +233,6 @@ img {
 
 /* site fonts */
 /* site colours */
-/* site fonts */
-/* site colours */
 html {
   font-size: 125%;
 }
@@ -298,8 +296,6 @@ a {
   color: inherit;
 }
 
-/* site fonts */
-/* site colours */
 .wrapper {
   width: 80%;
   max-width: 1260px;
@@ -352,49 +348,53 @@ header {
 }
 .header .headerImg {
   width: 40%;
-}
-.header .headerImg .shadowBox {
-  width: 440px;
-  height: 650px;
+  position: relative;
   background-color: white;
+  top: 50px;
 }
-.header .headerImg .shadowBox img {
-  width: 440px;
-  height: 650px;
+.header .headerImg img {
+  position: relative;
+  top: -20px;
+  left: -20px;
 }
-.header .headerContent {
+
+.headerContent {
   width: 60%;
   padding: 0 50px;
-}
-.header .headerContent .contentContainer {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-.header .headerContent .contentContainer h1 {
-  font-size: 8rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
-.header .headerContent .contentContainer img {
+.headerContent .contentContainer {
+  position: relative;
+}
+.headerContent .contentContainer h1 {
+  font-size: 8rem;
+}
+.headerContent .contentContainer img {
   position: absolute;
+  left: 420px;
+  top: -50px;
 }
 
 .section1 {
   background-color: #f6f6f6;
-  height: 400px;
+  height: 500px;
 }
 .section1 .about {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
 }
 .section1 .about .section1Placeholder {
   width: 40%;
 }
 .section1 .about .section1Content {
   width: 60%;
+  height: 100%;
   padding: 0 50px;
 }

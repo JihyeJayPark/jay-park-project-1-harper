@@ -1,3 +1,5 @@
+@use "./variables";
+
 header {
     background-color: #b9dde7;
 }
@@ -8,31 +10,29 @@ header {
         width: 40%;
         position: relative;
         background-color: white;
-        top: 100px;
-        left: 100px;
+        top: 50px;
         img {
-            // width: 440px;
-            // height: 650px;
-            // position: absolute;
-            // bottom: -125px;
-            // max-width: 45%;
-            // max-height: 600px;
+            position: relative;
+            top: -20px;
+            left: -20px;
         }
     }
 }
     .headerContent {
         width: 60%;
         padding: 0 50px;
+        display: flex;
+        align-items: center;
         .contentContainer {
-            width: 65%;
-            margin: 0 auto;
-            // h1 {
-            //     font-size: 8rem;
-            //     align-items: center;
-            // }
-            // img {
-            //     position: absolute;
-            // }       
+            position: relative;
+            h1 {
+                font-size: 8rem;
+            }
+            img {
+                position: absolute;
+                left: 420px;
+                top: -50px;
+            }       
         }
 
     }

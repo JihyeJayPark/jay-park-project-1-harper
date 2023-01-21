@@ -1,5 +1,7 @@
+@use "./variables";
+
 footer {
-    background-color: $solidBlack;
+    background-color: variables.$solidBlack;
     p {
         color: white;
         text-align: center;

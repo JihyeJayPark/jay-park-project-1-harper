@@ -1,4 +1,4 @@
-@import "./variables";
+@use "./variables";
 
 .wrapper {
     width: 80%;
@@ -7,7 +7,7 @@
 }
 
 .button {
-    background-color: $tertiary;
+    background-color: variables.$tertiary;
     padding: 5px 30px;
     // hover&focus needed?
 }
