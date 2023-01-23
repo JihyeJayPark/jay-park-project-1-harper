@@ -15,8 +15,6 @@
         .section1Content {
             display: flex;
             flex-direction: column;
-            padding-left: 85px;
-            width: 60%;
             height: 100%;
         }        
     }
@@ -32,7 +30,6 @@
 
 .section3 {
     background-color: #f6f6f6;
-    height: 650px;
     
     .wrapper {
         display: flex;
@@ -146,7 +143,6 @@
     padding-bottom: 100px;
     .wrapper {
         display: flex;
-        justify-content: space-between;
         align-items: center;
         .journeyImgBox {
             background-color: #227284;
@@ -161,6 +157,7 @@
         }
         .journeyTextBox {
             flex-basis: 65%;
+            margin-left: 124px;
             h3 {
                 margin-top: 25px;
             }

@@ -1,7 +1,7 @@
 @use "./variables";
 
 header {
-    background-color: #b9dde7;
+    background-color: variables.$primary;
 }
 
 .header {
@@ -18,27 +18,28 @@ header {
         }
     }
 }
-    .headerContent {
-        width: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .contentContainer {
-            position: relative;
-            h1 {
-                font-size: 7rem;
-                padding-right: 60px;
-            }
-            img {
-                width: 160px;
-                height: 150px;
-                position: absolute;
-                left: 370px;
-                top: -40px;
-            }       
-        }
 
+.headerContent {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .contentContainer {
+        position: relative;
+        h1 {
+            font-size: 7rem;
+            padding-right: 60px;
+        }
+        img {
+            width: 160px;
+            height: 150px;
+            position: absolute;
+            left: 370px;
+            top: -40px;
+        }       
     }
+
+}
 
 
 

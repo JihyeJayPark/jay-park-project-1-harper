@@ -413,8 +413,6 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-left: 85px;
-  width: 60%;
   height: 100%;
 }
 
@@ -427,7 +425,6 @@ header {
 
 .section3 {
   background-color: #f6f6f6;
-  height: 650px;
 }
 .section3 .wrapper {
   display: -webkit-box;
@@ -556,9 +553,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -577,6 +571,7 @@ header {
 .section5 .wrapper .journeyTextBox {
   -ms-flex-preferred-size: 65%;
       flex-basis: 65%;
+  margin-left: 124px;
 }
 .section5 .wrapper .journeyTextBox h3 {
   margin-top: 25px;
@@ -608,4 +603,130 @@ header {
 }
 .section6 .galleryContainer ul li:nth-child(3) {
   margin-right: 0;
+}
+
+@media (min-width: 941px) {
+  .section1Content {
+    width: 60%;
+    padding-left: 85px;
+  }
+}
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  .headerContent .contentContainer h1 {
+    font-size: 13vw;
+    padding-left: 50px;
+  }
+  .headerContent .contentContainer img {
+    display: none;
+  }
+  .section1Placeholder {
+    display: none;
+  }
+  .section1Content {
+    width: 100%;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nav li .title {
+    padding: 0;
+  }
+  .section1 {
+    height: auto;
+  }
+  .section1 .section1Content {
+    padding-left: 0;
+  }
+  .section3 .wrapper ul li, .section3 .wrapper ul li:nth-child(2), .section3 .wrapper ul li:nth-child(4) {
+    width: 100%;
+    margin: 0;
+  }
+  .section4 .harpersTravels {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section4 .harpersTravels .imgContent {
+    width: 100%;
+  }
+  .section4 .harpersTravels .imgContent img {
+    min-height: 300px;
+    position: relative;
+    width: 100%;
+  }
+  .section4 .harpersTravels .textContent {
+    width: 100%;
+  }
+  .section4 .favouriteThings {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section4 .favouriteThings .imgContent {
+    width: 100%;
+    bottom: 0;
+  }
+  .section4 .favouriteThings .imgContent img {
+    min-height: 300px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+  .section4 .favouriteThings .textContent {
+    width: 100%;
+  }
+  .section5 .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section5 .wrapper .journeyTextBox {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .section6 .galleryContainer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section6 .galleryContainer ul li {
+    margin: 0;
+  }
+  .section6 .galleryContainer ul li:nth-child(2),
+.section6 .galleryContainer ul li:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .findOutMoreButton {
+    width: 100%;
+  }
+  .section6 .galleryContainer ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section6 .galleryContainer ul li {
+    margin: 0;
+  }
+  .section6 .galleryContainer ul li:nth-child(2), .section6 .galleryContainer ul li:nth-child(3) {
+    margin-top: 20px;
+  }
 }
