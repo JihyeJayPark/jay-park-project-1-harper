@@ -7,21 +7,188 @@
         display: flex;
         // justify-content: center;
         // align-items: center;
-        height: 100%;
         padding: 120px 0;
+        height: 100%;
         .section1Placeholder {
             width: 40%;
         }
         .section1Content {
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding-left: 85px;
             width: 60%;
             height: 100%;
-            // display: inline-block;
-            // margin: auto 0;
-            padding-left: 70px;
         }        
+    }
+}
+
+.section2 {
+    img {
+        width: 100%;
+        height: max(50vh, 500px);
+        object-fit: cover;
+    }
+}
+
+.section3 {
+    background-color: #f6f6f6;
+    height: 650px;
+    
+    .wrapper {
+        display: flex;
+        height: 100%;
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 65px;
+            padding-top: 80px;
+            padding-bottom: 150px;
+            li {
+                display: flex;
+                align-items: space-between;
+                width: calc(50% - 85px);
+                margin: 15px 20px 15px 0px;
+                position: relative;
+            }
+            li:nth-child(2), li:nth-child(4) {
+                width: calc(50% - 85px);
+                margin: 15px 0 15px 65px;
+            }
+        }
+    }
+
+    .iconContainer {
+        position: absolute;
+        left: -65px;
+        top: -13px;
+    }
+    .galleryIcon::before {
+        content: url(../assets/icons/Mediamodifier-Design.svg);
+    }
+
+    .aboutIcon::before {
+        content: url(../assets/icons/Mediamodifier-Design2.svg);
+    }
+
+    .blogIcon::before {
+        content: url(../assets/icons/Mediamodifier-Design3.svg);
+    }
+
+    .contactIcon::before {
+        content: url(../assets/icons/Mediamodifier-Design4.svg);
+    }
+
+    .mainNavContent {
+        margin-left: 15px;
+    }
+}
+
+.section4 {
+    display: flex;
+    flex-wrap: wrap;
+    // margin: 50px 0px 0 0;
+    .harpersTravels {
+        display: flex;
+        margin: 0 auto;
+        flex-basis: 100%;
+        .imgContent {
+            width: 50%;
+            position: relative;
+            background-color: #68b0c1;
+            bottom: 40px;
+        }
+        .textContent {
+            width: 50%;
+            align-self: center;
+            padding: 7% 8% 3% 8%;;
+        }
+    }
+    .favouriteThings {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 0 auto;
+        flex-basis: 100%;
+        .imgContent {
+            width: 50%;
+            position: relative;
+            background-color: #b9dde7;
+            bottom: -40px;
+        }
+        .textContent {
+            width: 50%;
+            align-self: center;
+            padding: 7% 8% 3% 8%;
+            ;
+        }
+        // .positionRight {
+        //     position: right;
+        // }
+    }
+    .harpersTravels img {
+        max-width: 85%;
+        max-height: 100%;
+        position: absolute;
+        left: 85px;
+        bottom: 20px;
+    }
+    .favouriteThings img {
+        max-width: 85%;
+        max-height: 100%;
+        position: absolute;
+        right: 120px;
+        bottom: 20px;
+    }
+}
+
+.section5 {
+    background-color: #f6f6f6;
+    padding-top: 130px;
+    padding-bottom: 100px;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .journeyImgBox {
+            background-color: #227284;
+            position: relative;
+            top: 20px;
+            left: 20px;
+            img {
+                position: relative;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+        .journeyTextBox {
+            flex-basis: 65%;
+            h3 {
+                margin-top: 25px;
+            }
+            p {
+                margin-top: 30px;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+.section6 {
+    .galleryContainer {
+        display: flex;
+        justify-content: center;
+        ul {
+            display: flex;
+            margin: 100px auto;
+            li {
+                margin: 0 20px;
+            }
+            li:nth-child(1) {
+                margin-left: 0;
+            } 
+            li:nth-child(3) {
+                margin-right: 0;
+            }
+        }
     }
 }
 

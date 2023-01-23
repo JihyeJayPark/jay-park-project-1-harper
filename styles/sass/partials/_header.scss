@@ -12,7 +12,6 @@ header {
         background-color: white;
         top: 80px;
         img {
-
             position: relative;
             top: -20px;
             left: -20px;
@@ -21,13 +20,14 @@ header {
 }
     .headerContent {
         width: 60%;
-        padding: 0 70px;
         display: flex;
         align-items: center;
+        justify-content: center;
         .contentContainer {
             position: relative;
             h1 {
                 font-size: 7rem;
+                padding-right: 60px;
             }
             img {
                 width: 160px;
