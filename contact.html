@@ -27,40 +27,111 @@
             </div><!-- .wrapper ends -->
         </nav>
         
-        <div>
-            <img src="./assets/contact-image-1.jpg" alt=""><!-- Maybe background img? -->
-            <h2>Contact me</h2>            
-        </div>
+        <div class="headerContainer">
+            <img src="./assets/contact-image-1.jpg" alt="Header background with purpule wave patterns">
+            <div class="wrapper">
+                <h2>Contact me</h2>                   
+            </div><!-- .headerContainer ends-->
+        </div><!-- .wrapper ends -->
     </header>
 
-    <section>
-        <div class="wrapper contactFlexContainer">
-            <aside class="contactLeft">
-                <h5>info@email.com</h5>
-                <p>123 - 456 - 7890</p>
-                <p>123 Queen Street West, Unit 10</p>
-                <p>Toronto, Ontario</p>
-                <p>M5V2D5</p>
-            </aside>
-            <div class="contactForm contactRight" id="contactForm">
-                <form action="#" method="post" class="myForm" name="myForm">
-                    <div class="formTop">
-                        <input type="text" class="userName" id="userName" name="userName" placeholder="Name">
-                        <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">                    
-                    </div>
-                    <div class="formBottom">
-                        <textarea name="userMessage" id="userMessage" placeholder="Message" cols="30" rows="10" minlength="5" maxlength="200"></textarea>    
-                    </div>
-                    <div class="formButton">
-                        <button type="submit">Submit</button>                    
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
+    <!-- MAIN -->
+    <main id="contactMainContent">
+        <section class="contactSection">
+            <div class="wrapper contactFlexContainer">
+                <!-- Contact left side -->
+                <aside class="contactLeft">
+                    <div class="svgContainer">
+                        <!-- Facebook svg -->
+                        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#227284">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <rect x="0" fill="none" width="20" height="20"></rect>
+                                <g>
+                                    <path
+                                        d="M8.46 18h2.93v-7.3h2.45l.37-2.84h-2.82V6.04c0-.82.23-1.38 1.41-1.38h1.51V2.11c-.26-.03-1.15-.11-2.19-.11-2.18 0-3.66 1.33-3.66 3.76v2.1H6v2.84h2.46V18z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <!-- Twitter svg -->
+                        <svg fill="#227284" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 296.6 256.4 208.4" xml:space="preserve" stroke="#227284">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M-14.6,321.2c-9.4,4.2-19.6,7-30.2,8.3c10.9-6.5,19.2-16.8,23.1-29.1c-10.2,6-21.4,10.4-33.4,12.8 c-9.6-10.2-23.3-16.6-38.4-16.6c-29,0-52.6,23.6-52.6,52.6c0,4.1,0.4,8.1,1.4,12c-43.7-2.2-82.5-23.1-108.4-55 c-4.5,7.8-7.1,16.8-7.1,26.5c0,18.2,9.3,34.3,23.4,43.8c-8.6-0.3-16.7-2.7-23.8-6.6v0.6c0,25.5,18.1,46.8,42.2,51.6 c-4.4,1.2-9.1,1.9-13.9,1.9c-3.4,0-6.7-0.3-9.9-0.9c6.7,20.9,26.1,36.1,49.1,36.5c-18,14.1-40.7,22.5-65.3,22.5 c-4.2,0-8.4-0.2-12.6-0.7c23.3,14.9,50.9,23.6,80.6,23.6c96.8,0,149.7-80.2,149.7-149.7c0-2.3,0-4.6-0.1-6.8 C-30.5,341-21.6,331.8-14.6,321.2">
+                                </path>
+                            </g>
+                        </svg>
+                        <!-- LinkedIn svg -->
+                        <svg fill="#227284" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-271 283.9 256 235.1" xml:space="preserve">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g>
+                                    <rect x="-264.4" y="359.3" width="49.9" height="159.7"></rect>
+                                    <path
+                                        d="M-240.5,283.9c-18.4,0-30.5,11.9-30.5,27.7c0,15.5,11.7,27.7,29.8,27.7h0.4c18.8,0,30.5-12.3,30.4-27.7 C-210.8,295.8-222.1,283.9-240.5,283.9z">
+                                    </path>
+                                    <path
+                                        d="M-78.2,357.8c-28.6,0-46.5,15.6-49.8,26.6v-25.1h-56.1c0.7,13.3,0,159.7,0,159.7h56.1v-86.3c0-4.9-0.2-9.7,1.2-13.1 c3.8-9.6,12.1-19.6,27-19.6c19.5,0,28.3,14.8,28.3,36.4V519h56.6v-88.8C-14.9,380.8-42.7,357.8-78.2,357.8z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                        <!-- Instagram svg -->
+                        <svg fill="#227284" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <g id="Instagram">
+                                    <g>
+                                        <path
+                                            d="M18.437,20.937H5.563a2.5,2.5,0,0,1-2.5-2.5V5.563a2.5,2.5,0,0,1,2.5-2.5H18.437a2.5,2.5,0,0,1,2.5,2.5V18.437A2.5,2.5,0,0,1,18.437,20.937ZM5.563,4.063a1.5,1.5,0,0,0-1.5,1.5V18.437a1.5,1.5,0,0,0,1.5,1.5H18.437a1.5,1.5,0,0,0,1.5-1.5V5.563a1.5,1.5,0,0,0-1.5-1.5Z">
+                                        </path>
+                                        <path
+                                            d="M12,16.594A4.595,4.595,0,1,1,16.6,12,4.6,4.6,0,0,1,12,16.594ZM12,8.4A3.595,3.595,0,1,0,15.6,12,3.6,3.6,0,0,0,12,8.4Z">
+                                        </path>
+                                        <circle cx="17.2" cy="6.83" r="1.075"></circle>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </div><!-- .svgContainer ends -->
+                    <h5>info@email.com</h5>
+                    <p>123 - 456 - 7890</p>
+                    <p>123 Queen Street West, Unit 10</p>
+                    <p>Toronto, Ontario</p>
+                    <p>M5V2D5</p>
+                </aside><!-- .contactLeft ends -->
+                <!-- Contact right side -->
+                <div class="contactForm contactRight" id="contactForm">
+                    <form action="#" method="post" class="myForm" name="myForm">
+                        <div class="formTop">
+                            <input type="text" class="userName" id="userName" name="userName" placeholder="Name">
+                            <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">                    
+                        </div>
+                        <div class="formBottom">
+                            <textarea name="userMessage" id="userMessage" placeholder="Message" cols="30" rows="10" minlength="5" maxlength="200"></textarea>    
+                        </div>
+                        <div class="formButton">
+                            <button type="submit">Submit</button>                    
+                        </div>
+                    </form>
+                </div><!-- .contactRight ends -->
+            </div><!-- .wrapper ends -->
+        </section>    
+    </main>
+    
+    <!-- FOOTER -->
     <footer>
-        <p>Copyright &copy; 2018 HackerYou</p>
+        <div class="wrapper">
+            <p>Copyright &copy; 2018 HackerYou</p>
+        </div><!-- .wrapper ends -->
     </footer>
 </body>
 </html>

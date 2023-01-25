@@ -64,20 +64,6 @@ h5 {
     text-align: right;
 }
 
-// p {
-//     line-height: 1.5rem;
-//     margin: 0 0 30px 0;
-
-//     // Always do margin bottom and/or top because it's easier to track
-//     &.smallCopy {
-//         // any p with class of .smallCopy
-//         font-size: 0.6rem;
-//         line-height: 1.2rem;
-//         font-weight: bold;
-//         margin: 0;
-//     }
-// }
-
 ul, li, a, input {
     padding: 0;
     margin: 0;
@@ -90,6 +76,4 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
-    // cursor: pointer;
-    // transition: 0.3s;
 }

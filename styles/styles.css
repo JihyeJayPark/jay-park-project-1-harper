@@ -354,10 +354,9 @@ header {
 }
 .header .headerImg {
   position: relative;
-  top: -20px;
-  left: -20px;
-  -webkit-box-shadow: 15px 15px 0px 0px white;
-          box-shadow: 15px 15px 0px 0px white;
+  top: 65px;
+  -webkit-box-shadow: 20px 20px 0px 0px white;
+          box-shadow: 20px 20px 0px 0px white;
 }
 
 .headerContent {
@@ -434,7 +433,9 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 65px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-top: 80px;
   padding-bottom: 150px;
 }
@@ -445,30 +446,33 @@ header {
   -webkit-box-align: space-between;
       -ms-flex-align: space-between;
           align-items: space-between;
-  width: calc(50% - 85px);
-  margin: 15px 20px 15px 0px;
+  width: calc(50% - 20px);
+  margin: 15px 30px 15px 0px;
   position: relative;
 }
 .section3 .wrapper ul li:nth-child(2), .section3 .wrapper ul li:nth-child(4) {
-  width: calc(50% - 85px);
-  margin: 15px 0 15px 65px;
-}
-.section3 .iconContainer {
-  position: absolute;
-  left: -65px;
-  top: -13px;
+  width: calc(50% - 10px);
+  margin: 15px 0 15px 0px;
 }
 .section3 .galleryIcon::before {
   content: url(../assets/icons/Mediamodifier-Design.svg);
+  position: relative;
+  bottom: 14px;
 }
 .section3 .aboutIcon::before {
   content: url(../assets/icons/Mediamodifier-Design2.svg);
+  position: relative;
+  bottom: 14px;
 }
 .section3 .blogIcon::before {
   content: url(../assets/icons/Mediamodifier-Design3.svg);
+  position: relative;
+  bottom: 14px;
 }
 .section3 .contactIcon::before {
   content: url(../assets/icons/Mediamodifier-Design4.svg);
+  position: relative;
+  bottom: 14px;
 }
 .section3 .mainNavContent {
   margin-left: 15px;
@@ -496,14 +500,27 @@ header {
   bottom: 40px;
 }
 .section4 .harpersTravels .imgContent img {
-  width: 100%;
-  height: 100%;
+  max-width: 80%;
+  max-height: 100%;
+  position: absolute;
+  left: 114px;
+  bottom: 27px;
 }
 .section4 .harpersTravels .textContent {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 7% 8% 3% 8%;
+  padding: 6% 8% 2% 8%;
+}
+.section4 .harpersTravels .textContent .harpersTravelsButton {
+  width: 35%;
 }
 .section4 .favouriteThings {
   display: -webkit-box;
@@ -523,25 +540,28 @@ header {
   background-color: #b9dde7;
   bottom: -40px;
 }
+.section4 .favouriteThings .imgContent img {
+  max-width: 80%;
+  max-height: 100%;
+  position: absolute;
+  right: 174px;
+  bottom: 27px;
+}
 .section4 .favouriteThings .textContent {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 7% 8% 3% 8%;
+  padding: 2% 8% 6% 8%;
 }
-.section4 .harpersTravels img {
-  max-width: 85%;
-  max-height: 100%;
-  position: absolute;
-  left: 85px;
-  bottom: 20px;
-}
-.section4 .favouriteThings img {
-  max-width: 85%;
-  max-height: 100%;
-  position: absolute;
-  right: 120px;
-  bottom: 20px;
+.section4 .favouriteThings .textContent .favouriteThingsButton {
+  width: 35%;
 }
 
 .section5 {
@@ -557,16 +577,9 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.section5 .wrapper .journeyImgBox {
-  background-color: #227284;
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-.section5 .wrapper .journeyImgBox img {
-  position: relative;
-  bottom: 20px;
-  right: 20px;
+.section5 .wrapper img {
+  -webkit-box-shadow: 20px 20px 0px 0px #227284;
+          box-shadow: 20px 20px 0px 0px #227284;
 }
 .section5 .wrapper .journeyTextBox {
   -ms-flex-preferred-size: 65%;
@@ -605,10 +618,24 @@ header {
   margin-right: 0;
 }
 
+@media (max-width: 1270px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerContent .contentContainer img {
+    display: none;
+  }
+}
 @media (min-width: 941px) {
   .section1Content {
     width: 60%;
-    padding-left: 85px;
+    padding-left: 100px;
   }
 }
 /* Portrait tablet and small desktops */
@@ -616,9 +643,6 @@ header {
   .headerContent .contentContainer h1 {
     font-size: 13vw;
     padding-left: 50px;
-  }
-  .headerContent .contentContainer img {
-    display: none;
   }
   .section1Placeholder {
     display: none;
@@ -846,6 +870,119 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.blogSection .blogFlexContainer .blogRight form div {
+.blogSection .blogFlexContainer .blogRight form .formTop {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop .visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop input {
+  width: calc(50% - 5px);
+  border: none;
+  padding: 30px;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop input:nth-child(1) {
+  margin-right: 10px;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom .visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom textarea {
+  width: 100%;
+  border: none;
+  padding: 40px 40px 120px 40px;
+}
+.blogSection .blogFlexContainer .blogRight form .submitButton {
+  margin-bottom: 100px;
+}
+.blogSection .blogFlexContainer .blogRight form .submitButton .button {
+  width: 100%;
+  border: none;
+}
+
+.contactSection {
+  background-color: #f6f6f6;
+}
+.contactSection .contactFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactSection .contactFlexContainer .contactLeft {
+  width: 33%;
+  margin-right: 20px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  padding: 50px 40px 40px 40px;
+}
+.contactSection .contactFlexContainer .contactLeft .svgContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+  position: relative;
+  left: -10px;
+}
+.contactSection .contactFlexContainer .contactLeft h5 {
+  margin-bottom: 15px;
+  text-transform: none;
+}
+.contactSection .contactFlexContainer .contactLeft p {
+  margin: 0;
+}
+.contactSection .contactFlexContainer .contactLeft svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 23px;
+}
+.contactSection .contactFlexContainer .contactLeft svg:nth-child(2), .contactSection .contactFlexContainer .contactLeft svg:nth-child(3) {
+  width: 30px;
+  height: 30px;
+}
+.contactSection .contactFlexContainer .contactRight {
+  width: 67%;
+  margin-left: 20px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }

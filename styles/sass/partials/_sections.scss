@@ -5,8 +5,6 @@
     height: 470px;
     .about {
         display: flex;
-        // justify-content: center;
-        // align-items: center;
         padding: 120px 0;
         height: 100%;
         .section1Placeholder {
@@ -30,52 +28,48 @@
 
 .section3 {
     background-color: variables.$secondary;
-    
     .wrapper {
         display: flex;
         height: 100%;
         ul {
             display: flex;
             flex-wrap: wrap;
-            margin-left: 65px;
+            justify-content: space-between;
             padding-top: 80px;
             padding-bottom: 150px;
             li {
                 display: flex;
                 align-items: space-between;
-                width: calc(50% - 85px);
-                margin: 15px 20px 15px 0px;
+                width: calc(50% - 20px);
+                margin: 15px 30px 15px 0px;
                 position: relative;
             }
             li:nth-child(2), li:nth-child(4) {
-                width: calc(50% - 85px);
-                margin: 15px 0 15px 65px;
+                width: calc(50% - 10px);
+                margin: 15px 0 15px 0px;
             }
         }
     }
-
-    .iconContainer {
-        position: absolute;
-        left: -65px;
-        top: -13px;
-    }
-
     .galleryIcon::before {
         content: url(../assets/icons/Mediamodifier-Design.svg);
+        position: relative;
+        bottom: 14px;
     }
-
     .aboutIcon::before {
         content: url(../assets/icons/Mediamodifier-Design2.svg);
+        position: relative;
+        bottom: 14px;
     }
-
     .blogIcon::before {
         content: url(../assets/icons/Mediamodifier-Design3.svg);
+        position: relative;
+        bottom: 14px;
     }
-
     .contactIcon::before {
         content: url(../assets/icons/Mediamodifier-Design4.svg);
+        position: relative;
+        bottom: 14px;
     }
-
     .mainNavContent {
         margin-left: 15px;
     }
@@ -84,7 +78,6 @@
 .section4 {
     display: flex;
     flex-wrap: wrap;
-    // margin: 50px 0px 0 0;
     .harpersTravels {
         display: flex;
         margin: 0 auto;
@@ -95,14 +88,22 @@
             background-color: variables.$quaternary;
             bottom: 40px;
             img {
-                width: 100%;
-                height: 100%;
+                max-width: 80%;
+                max-height: 100%;
+                position: absolute;
+                left: 114px;
+                bottom: 27px;
             }
         }
         .textContent {
             width: 50%;
+            display: flex;
+            flex-direction: column;
             align-self: center;
-            padding: 7% 8% 3% 8%;;
+            padding: 6% 8% 2% 8%;
+            .harpersTravelsButton {
+                width: 35%;
+            }
         }
     }
     .favouriteThings {
@@ -115,30 +116,24 @@
             position: relative;
             background-color: variables.$primary;
             bottom: -40px;
+            img {
+                max-width: 80%;
+                max-height: 100%;
+                position: absolute;
+                right: 174px;
+                bottom: 27px;
+            }
         }
         .textContent {
             width: 50%;
+            display: flex;
+            flex-direction: column;
             align-self: center;
-            padding: 7% 8% 3% 8%;
-            ;
+            padding: 2% 8% 6% 8%;
+            .favouriteThingsButton {
+                width: 35%;
+            }
         }
-        // .positionRight {
-        //     position: right;
-        // }
-    }
-    .harpersTravels img {
-        max-width: 85%;
-        max-height: 100%;
-        position: absolute;
-        left: 85px;
-        bottom: 20px;
-    }
-    .favouriteThings img {
-        max-width: 85%;
-        max-height: 100%;
-        position: absolute;
-        right: 120px;
-        bottom: 20px;
     }
 }
 
@@ -149,16 +144,8 @@
     .wrapper {
         display: flex;
         align-items: center;
-        .journeyImgBox {
-            background-color: variables.$quinary;
-            position: relative;
-            top: 20px;
-            left: 20px;
-            img {
-                position: relative;
-                bottom: 20px;
-                right: 20px;
-            }
+        img {
+            box-shadow: 20px 20px 0px 0px variables.$quinary;
         }
         .journeyTextBox {
             flex-basis: 65%;

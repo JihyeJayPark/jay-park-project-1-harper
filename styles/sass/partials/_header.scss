@@ -6,18 +6,11 @@ header {
 
 .header {
     display: flex;
-    // .headerImg {
-    //     width: 40%;
-    //     position: relative;
-    //     background-color: white;
-    //     top: 80px;
-        .headerImg {
-            position: relative;
-            top: -20px;
-            left: -20px;
-            box-shadow: 15px 15px 0px 0px white;
-        }
-    // }
+    .headerImg {
+        position: relative;
+        top: 65px;
+        box-shadow: 20px 20px 0px 0px white;
+    }
 }
 
 .headerContent {

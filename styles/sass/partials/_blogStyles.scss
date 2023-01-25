@@ -97,12 +97,61 @@
             form {
                 display: flex;
                 flex-direction: column;
-                div {
+                .formTop {
                     width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    .visuallyHidden {
+                        border: 0;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                    }
+                    input {
+                        width: calc(50% - 5px);
+                        border: none;
+                        padding: 30px;
+                    }
+                    input:nth-child(1) {
+                        margin-right: 10px;
+                    }
+                    // input:nth-child(2) {
+                    //     margin-left: 10px;
+                    // }
                 }
-            }
+                .formBottom {
+                    width: 100%;
+                    margin-bottom: 20px;
+                    .visuallyHidden {
+                        border: 0;
+                        clip: rect(0 0 0 0);
+                        height: 1px;
+                        margin: -1px;
+                        overflow: hidden;
+                        padding: 0;
+                        position: absolute;
+                        width: 1px;
+                    }
+                    textarea {
+                        width: 100%;
+                        border: none;
+                        padding: 40px 40px 120px 40px;
+                    }
+                }
+                .submitButton {
+                    margin-bottom: 100px;
+                    .button {
+                        width: 100%;
+                        border: none;
+                    }                    
+                }
 
-            
+            }     
         }
     }
 }

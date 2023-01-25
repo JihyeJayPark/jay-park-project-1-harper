@@ -1,9 +1,19 @@
 @use "./variables";
 
+@media (max-width: 1270px) {
+    .header {
+            display: flex;
+            flex-direction: column;
+        }
+    .headerContent .contentContainer img {
+        display: none;
+    }
+}
+
 @media (min-width: 941px) {
     .section1Content {
         width: 60%;
-        padding-left: 85px;
+        padding-left: 100px;
     }
 }
 
@@ -12,9 +22,6 @@
     .headerContent .contentContainer h1 {
         font-size: 13vw;
         padding-left: 50px;
-    }
-    .headerContent .contentContainer img {
-        display: none;
     }
     .section1Placeholder {
         display: none;
