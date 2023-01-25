@@ -13,7 +13,7 @@
     .blogFlexContainer {
         display: flex;
         .blogLeft {
-            width: 30%;
+            // width: 30%;
             margin-right: 20px;
             margin-top: 100px;
             display: flex;
@@ -48,45 +48,45 @@
             }
         }
         .blogRight {
-            width: 70%;
-            margin-left: 20px;
-            margin-top: 100px;
+            // width: 70%;
+            // margin-left: 20px;
+            // margin-top: 100px;
             display: flex;
             flex-direction: column;
             article {
                 background-color: white;
                 padding: 40px;
                 margin-bottom: 40px;
-                .pFirst {
-                    margin-bottom: 20px;
-                }
-                .pMiddle {
-                    margin-top: 0;
-                    margin-bottom: 20px;
-                }
-                .pLast {
-                    margin-top: 0;
-                    margin-bottom: 60px;
-                }
-            article, .commentBottom {
-
             }
+            .pFirst {
+                margin-bottom: 20px;
             }
+            .pMiddle {
+                margin-top: 0;
+                margin-bottom: 20px;
+            }
+            .pLast {
+                margin-top: 0;
+                margin-bottom: 60px;
+            }
+            
             .commentTop, .commentBottom {
                 display: flex;
                 background-color: white;
                 padding: 40px;
                 margin-bottom: 40px;
-                .imgDiv {
-                    width: 15%;
-                }
-                .textDiv {
-                    width: 85%;
-                    p {
-                        margin: 0;
-                    }
-                }
-            }
+            }    
+            // .imgDiv {
+            //     width: 15%;
+            // }
+            // .textDiv {
+            //     width: 85%;
+            //     p {
+            //         margin: 0;
+            //     }
+            // }
+            
+
             article, .commentBottom {
                 border-bottom: 5px solid variables.$quinary;
             }
@@ -94,6 +94,7 @@
                 margin-bottom: 20px;
                 border-bottom: none;
             }
+            
             form {
                 display: flex;
                 flex-direction: column;
@@ -113,7 +114,7 @@
                         width: 1px;
                     }
                     input {
-                        width: calc(50% - 5px);
+                        // width: calc(50% - 5px);
                         border: none;
                         padding: 30px;
                     }

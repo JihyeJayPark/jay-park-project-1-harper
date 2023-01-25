@@ -771,7 +771,6 @@ header {
   display: flex;
 }
 .blogSection .blogFlexContainer .blogLeft {
-  width: 30%;
   margin-right: 20px;
   margin-top: 100px;
   display: -webkit-box;
@@ -810,9 +809,6 @@ header {
   letter-spacing: 0;
 }
 .blogSection .blogFlexContainer .blogRight {
-  width: 70%;
-  margin-left: 20px;
-  margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,14 +822,14 @@ header {
   padding: 40px;
   margin-bottom: 40px;
 }
-.blogSection .blogFlexContainer .blogRight article .pFirst {
+.blogSection .blogFlexContainer .blogRight .pFirst {
   margin-bottom: 20px;
 }
-.blogSection .blogFlexContainer .blogRight article .pMiddle {
+.blogSection .blogFlexContainer .blogRight .pMiddle {
   margin-top: 0;
   margin-bottom: 20px;
 }
-.blogSection .blogFlexContainer .blogRight article .pLast {
+.blogSection .blogFlexContainer .blogRight .pLast {
   margin-top: 0;
   margin-bottom: 60px;
 }
@@ -844,15 +840,6 @@ header {
   background-color: white;
   padding: 40px;
   margin-bottom: 40px;
-}
-.blogSection .blogFlexContainer .blogRight .commentTop .imgDiv, .blogSection .blogFlexContainer .blogRight .commentBottom .imgDiv {
-  width: 15%;
-}
-.blogSection .blogFlexContainer .blogRight .commentTop .textDiv, .blogSection .blogFlexContainer .blogRight .commentBottom .textDiv {
-  width: 85%;
-}
-.blogSection .blogFlexContainer .blogRight .commentTop .textDiv p, .blogSection .blogFlexContainer .blogRight .commentBottom .textDiv p {
-  margin: 0;
 }
 .blogSection .blogFlexContainer .blogRight article, .blogSection .blogFlexContainer .blogRight .commentBottom {
   border-bottom: 5px solid #227284;
@@ -891,7 +878,6 @@ header {
   width: 1px;
 }
 .blogSection .blogFlexContainer .blogRight form .formTop input {
-  width: calc(50% - 5px);
   border: none;
   padding: 30px;
 }
@@ -974,7 +960,6 @@ header {
   display: flex;
 }
 .contactSection .contactFlexContainer .contactLeft {
-  width: 33%;
   height: 100%;
   margin-right: 20px;
   margin-top: 100px;
@@ -1016,8 +1001,6 @@ header {
   height: 30px;
 }
 .contactSection .contactFlexContainer .contactRight {
-  width: 67%;
-  margin-left: 20px;
   margin-top: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1057,7 +1040,6 @@ header {
   width: 1px;
 }
 .contactSection .contactFlexContainer .contactRight form .formTop input {
-  width: calc(50% - 5px);
   border: none;
   padding: 30px;
 }
@@ -1129,4 +1111,208 @@ header {
 .contactSection .contactFlexContainer .contactRight form .submitButton .button {
   width: 100%;
   border: none;
+}
+
+/* Portrait tablet and small desktops */
+@media (min-width: 768px) {
+  .blogLeft {
+    width: 30%;
+  }
+  .blogRight {
+    width: 70%;
+    margin-left: 20px;
+    margin-top: 100px;
+  }
+  .imgDiv {
+    width: 15%;
+  }
+  .textDiv {
+    width: 85%;
+  }
+  .textDiv p {
+    margin: 0;
+  }
+  input {
+    width: calc(50% - 5px);
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .blogFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogFlexContainer .blogLeft {
+    width: 100%;
+  }
+  .blogFlexContainer .blogLeft .asideOne {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogFlexContainer .blogLeft .asideOne p {
+    text-align: center;
+  }
+  .blogFlexContainer .blogLeft .asideTwo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .blogFlexContainer .blogRight {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .blogRight {
+    margin-top: 20px;
+  }
+  .imgDiv {
+    width: 15%;
+  }
+  .textDiv {
+    width: 85%;
+  }
+  .textDiv p {
+    margin: 0;
+  }
+  .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .blogRight {
+    margin-top: 20px;
+  }
+  .commentTop, .commentBottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .imgDiv {
+    width: 100%;
+  }
+  .textDiv {
+    width: 100%;
+  }
+  .textDiv p {
+    margin: 0;
+  }
+  .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 768px) {
+  .contactLeft {
+    width: 33%;
+  }
+  .contactRight {
+    width: 67%;
+    margin-left: 20px;
+  }
+  input {
+    width: calc(50% - 5px);
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contactFlexContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactFlexContainer .contactLeft {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactFlexContainer .contactRight {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .formTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    margin: 10px 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
 }
