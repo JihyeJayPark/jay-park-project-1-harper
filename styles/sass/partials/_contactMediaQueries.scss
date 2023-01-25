@@ -1,1 +1,129 @@
 @use "./variables";
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+    .headerContent .contentContainer h1 {
+        font-size: 13vw;
+        padding-left: 50px;
+    }
+
+    .section1Placeholder {
+        display: none;
+    }
+
+    .section1Content {
+        width: 100%;
+    }
+}
+
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+
+        li .title {
+            padding: 0;
+        }
+    }
+
+    .section1 {
+        height: auto;
+
+        .section1Content {
+            padding-left: 0;
+        }
+    }
+
+    .section3 .wrapper ul {
+
+        li,
+        li:nth-child(2),
+        li:nth-child(4) {
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .section4 .harpersTravels {
+        flex-direction: column;
+
+        .imgContent {
+            width: 100%;
+
+            img {
+                min-height: 300px;
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        .textContent {
+            width: 100%;
+        }
+    }
+
+    .section4 .favouriteThings {
+        flex-direction: column;
+
+        .imgContent {
+            width: 100%;
+            bottom: 0;
+
+            img {
+                min-height: 300px;
+                position: relative;
+                width: 100%;
+                bottom: 0;
+                right: 0;
+            }
+        }
+
+        .textContent {
+            width: 100%;
+        }
+    }
+
+    .section5 .wrapper {
+        flex-direction: column;
+        justify-content: center;
+
+        .journeyTextBox {
+            margin-left: 0;
+            margin-top: 50px;
+        }
+    }
+
+    .section6 .galleryContainer ul {
+        flex-direction: column;
+
+        li {
+            margin: 0;
+        }
+
+        li:nth-child(2),
+        li:nth-child(3) {
+            margin-top: 20px;
+        }
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .findOutMoreButton {
+        width: 100%;
+    }
+
+    .section6 .galleryContainer ul {
+        flex-direction: column;
+
+        li {
+            margin: 0;
+        }
+
+        li:nth-child(2),
+        li:nth-child(3) {
+            margin-top: 20px;
+        }
+    }
+}

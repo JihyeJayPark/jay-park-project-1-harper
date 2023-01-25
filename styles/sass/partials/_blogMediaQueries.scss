@@ -1,1 +1,113 @@
 @use "./variables";
+
+/* Portrait tablet and small desktops */
+@media (min-width: 768px) {
+    .blogLeft {
+        width: 30%;
+    }
+    .blogRight {
+        width: 70%;
+        margin-left: 20px;
+        margin-top: 100px;
+    }
+
+    .imgDiv {
+        width: 15%;
+    }
+
+    .textDiv {
+        width: 85%;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    input {
+        width: calc(50% - 5px);
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+    .blogFlexContainer {
+        display: flex;
+        flex-direction: column;
+        .blogLeft {
+            width: 100%;
+            .asideOne {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                p {
+                    text-align: center;
+                }
+            }
+            .asideTwo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        .blogRight {
+            width: 100%;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .blogRight {
+        margin-top: 20px;
+    }
+
+    .imgDiv {
+        width: 15%;
+    }
+    .textDiv {
+        width: 85%;
+        p {
+            margin: 0;
+        }
+    }
+
+    .formTop {
+        flex-direction: column;
+    }
+
+    input {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .blogRight {
+        margin-top: 20px;
+    }
+    .commentTop, .commentBottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgDiv {
+        width: 100%;
+    }
+
+    .textDiv {
+        width: 100%;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .formTop {
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
