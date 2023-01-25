@@ -109,19 +109,26 @@
                     <p>M5V2D5</p>
                 </aside><!-- .contactLeft ends -->
                 <!-- Contact right side -->
-                <div class="contactForm contactRight" id="contactForm">
-                    <form action="#" method="post" class="myForm" name="myForm">
-                        <div class="formTop">
-                            <input type="text" class="userName" id="userName" name="userName" placeholder="Name">
-                            <input type="email" class="userEmail" id="userEmail" name="userEmail" placeholder="Email address">                    
-                        </div>
-                        <div class="formBottom">
-                            <textarea name="userMessage" id="userMessage" placeholder="Message" cols="30" rows="10" minlength="5" maxlength="200"></textarea>    
-                        </div>
-                        <div class="formButton">
-                            <button type="submit">Submit</button>                    
-                        </div>
-                    </form>
+                <div class="contactRight" >
+                    <div class="contactForm" id="contactForm">
+                        <form action="#" method="#" class="myForm" name="myForm">
+                            <div class="formTop">
+                                <label for="name" class="visuallyHidden">Name</label>
+                                <input type="text" id="name" name="name" required placeholder="Name">
+
+                                <label for="email" class="visuallyHidden">Email</label>
+                                <input type="email" id="email" name="email" required placeholder="Email address">
+                            </div><!-- .formTop ends -->
+                            <div class="formBottom">
+                                <label for="message" class="visuallyHidden">Message</label>
+                                <textarea name="message" id="message" cols="55" rows="6" minlength="1" maxlength="500" required
+                                    placeholder="Message"></textarea>
+                            </div><!-- .formBottom ends -->
+                            <div class="submitButton">
+                                <button type="submit" class="button">Submit</button>
+                            </div><!-- .submitButton ends -->
+                        </form>
+                    </div><!-- .contactForm ends -->
                 </div><!-- .contactRight ends -->
             </div><!-- .wrapper ends -->
         </section>    

@@ -120,9 +120,10 @@
                     input:nth-child(1) {
                         margin-right: 10px;
                     }
-                    // input:nth-child(2) {
-                    //     margin-left: 10px;
-                    // }
+                    ::placeholder {
+                        color: variables.$solidBlack;
+                        opacity: 1;
+                    }
                 }
                 .formBottom {
                     width: 100%;
@@ -140,7 +141,11 @@
                     textarea {
                         width: 100%;
                         border: none;
-                        padding: 40px 40px 120px 40px;
+                        padding: 40px 30px 120px 30px;
+                    }
+                    ::placeholder {
+                        color: variables.$solidBlack;
+                        opacity: 1;
                     }
                 }
                 .submitButton {
@@ -150,7 +155,6 @@
                         border: none;
                     }                    
                 }
-
             }     
         }
     }

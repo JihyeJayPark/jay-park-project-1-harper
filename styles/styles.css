@@ -898,6 +898,26 @@ header {
 .blogSection .blogFlexContainer .blogRight form .formTop input:nth-child(1) {
   margin-right: 10px;
 }
+.blogSection .blogFlexContainer .blogRight form .formTop ::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop ::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop :-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop ::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formTop ::placeholder {
+  color: #171717;
+  opacity: 1;
+}
 .blogSection .blogFlexContainer .blogRight form .formBottom {
   width: 100%;
   margin-bottom: 20px;
@@ -915,7 +935,27 @@ header {
 .blogSection .blogFlexContainer .blogRight form .formBottom textarea {
   width: 100%;
   border: none;
-  padding: 40px 40px 120px 40px;
+  padding: 40px 30px 120px 30px;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom ::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom ::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom :-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom ::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.blogSection .blogFlexContainer .blogRight form .formBottom ::placeholder {
+  color: #171717;
+  opacity: 1;
 }
 .blogSection .blogFlexContainer .blogRight form .submitButton {
   margin-bottom: 100px;
@@ -935,6 +975,7 @@ header {
 }
 .contactSection .contactFlexContainer .contactLeft {
   width: 33%;
+  height: 100%;
   margin-right: 20px;
   margin-top: 100px;
   display: -webkit-box;
@@ -985,4 +1026,107 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.contactSection .contactFlexContainer .contactRight form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop .visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop input {
+  width: calc(50% - 5px);
+  border: none;
+  padding: 30px;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop input:nth-child(1) {
+  margin-right: 10px;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop ::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop ::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop :-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop ::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formTop ::placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom .visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom textarea {
+  width: 100%;
+  border: none;
+  padding: 40px 30px 120px 30px;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom ::-webkit-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom ::-moz-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom :-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom ::-ms-input-placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .formBottom ::placeholder {
+  color: #171717;
+  opacity: 1;
+}
+.contactSection .contactFlexContainer .contactRight form .submitButton {
+  margin-bottom: 100px;
+}
+.contactSection .contactFlexContainer .contactRight form .submitButton .button {
+  width: 100%;
+  border: none;
 }
