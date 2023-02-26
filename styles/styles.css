@@ -628,6 +628,9 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .header.active {
+    margin-top: 200px;
+  }
   .headerContent .contentContainer img {
     display: none;
   }
@@ -653,15 +656,6 @@ header {
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  .nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .nav li .title {
-    padding: 0;
-  }
   .section1 {
     height: auto;
   }
@@ -732,7 +726,7 @@ header {
     margin: 0;
   }
   .section6 .galleryContainer ul li:nth-child(2),
-.section6 .galleryContainer ul li:nth-child(3) {
+  .section6 .galleryContainer ul li:nth-child(3) {
     margin-top: 20px;
   }
 }
@@ -1314,5 +1308,80 @@ header {
   }
   h2 {
     font-size: 2.5rem;
+  }
+}
+.nav {
+  display: none;
+}
+
+.menu {
+  -webkit-transition: 0.7s ease;
+  transition: 0.7s ease;
+}
+
+.menu:hover {
+  color: #f6f6f6;
+}
+
+.hamburgerMenu {
+  padding: 25px 0;
+  padding-right: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  cursor: pointer;
+}
+.hamburgerMenu div {
+  float: right;
+}
+
+.bar {
+  display: block;
+  width: 50px;
+  height: 10px;
+  margin: 10px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #f6f6f6;
+}
+
+@media (max-width: 768px) {
+  .hamburgerMenu {
+    display: block;
+  }
+  .hamburgerMenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburgerMenu.active .bar:nth-child(1) {
+    -webkit-transform: translateY(20px) rotate(45deg);
+            transform: translateY(20px) rotate(45deg);
+  }
+  .hamburgerMenu.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-20px) rotate(-45deg);
+            transform: translateY(-20px) rotate(-45deg);
+  }
+  .slideOutNav {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #b9dde7;
+    color: #f6f6f6;
+    width: 100%;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  .navItem {
+    margin: 16px 0;
+  }
+  .slideOutNav.active {
+    left: 0;
   }
 }

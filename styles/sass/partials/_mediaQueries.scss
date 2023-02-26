@@ -2,9 +2,12 @@
 
 @media (max-width: 1270px) {
     .header {
-            display: flex;
-            flex-direction: column;
-        }
+        display: flex;
+        flex-direction: column;
+    }
+    .header.active {
+        margin-top: 200px;
+    }
     .headerContent .contentContainer img {
         display: none;
     }
@@ -34,12 +37,12 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-    .nav {
-        flex-direction: column;
-        li .title {
-            padding: 0;
-        }
-    }
+    // .nav {
+    //     flex-direction: column;
+    //     li .title {
+    //         padding: 0;
+    //     }
+    // }
     .section1 {
         height: auto;
         .section1Content {
